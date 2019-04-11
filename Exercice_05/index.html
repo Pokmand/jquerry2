@@ -11,5 +11,13 @@
     <button type="button" name="button">Envoyer</button>
   </form>
   <script src="assets\js\jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+    $("#lastName,#firstName").focus(function(){
+      $("#lastName,#firstName").css("border","1px solid green");
+    });
+    $("#lastName,#firstName").focusout(function(){
+      $("#lastName#firstName").css("border","1px solid red");
+    });
+      </script>
 </body>
 </html>
